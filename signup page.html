@@ -1,0 +1,108 @@
+<!-- First Name,
+Last name
+Email
+Password
+Confirm Password
+Address (textArea)
+State (select-option)
+Gender (radio)
+Age (type=number)
+Hobbies(Checkbox)
+Submit button -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #bacba5;
+		 }
+		.container {
+			width: 400px;
+			margin: 0 auto;
+			background-color: #9caed1;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
+		}
+		input[type="text"], input[type="email"], input[type="password"], textarea, select {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #e3d8d8;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		label {
+			display: block;
+			font-weight: bold;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+		button {
+			background-color: #b63c71;
+			color: #fff;
+			padding: 15px 20px;
+			margin: 5px 0;
+			border: none;
+			border-radius: 2px;
+			cursor: pointer;
+			 width: 100%;
+             border-radius: 15px;
+             font-size: 1em;
+            
+		}
+		button:hover {
+			background-color: #0dd35c;
+		} */
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Login Form</h2>
+	
+			<label for="fname">First Name:</label>
+			<input type="text" id="fname" name="fname" placeholder="Enter first name" required>
+
+			<label for="lname">Last Name:</label>
+			<input type="text" id="lname" name="lname" placeholder="Enter last name" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="Enter email" required>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" placeholder="Enter password" required>
+			<label for="confirm-password">Confirm Password:</label>
+			<input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password" required>
+
+			<label for="address">Address:</label>
+			<textarea id="address" name="address" placeholder="Enter address"></textarea>
+
+			<label for="state">State:</label>
+            <select id="state" name="state">
+             <option value=" ">Select a state:</option>
+             <option value="KA">Karnataka</option>
+             <option value="MA">Maharastra</option>
+             <option value="BH">Bihar</option>
+             <option value="AP">Andhra Pradesh</option>
+            
+             <label for="gender" >Gender:</label>
+             <input type="radio" id="male" name="gender" value="M">
+             <label for="male">Male</label>
+             <input type="radio" id="female" name="gender" value="F">
+             <label for="female">Female</label>
+             <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter age" required>
+            
+           <label for="hobbies">Hobbies:</label>
+            <input type="checkbox" id="hobbies" option value="RB">Reading book</input>
+            <input type="checkbox" id="hobbies" option value="CD">Coding</input>
+            <input type="checkbox" id="hobbies" option value="TV">Watching tv</input>
+            <button type="submit">SUBMIT</button>
+            </select>
+		</form>
+	</div>
+  </body>
+</html>
